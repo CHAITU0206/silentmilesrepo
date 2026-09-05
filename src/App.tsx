@@ -4,9 +4,10 @@ import { MessageCircle, ArrowRight } from 'lucide-react';
 const bgImage =
   'https://images.pexels.com/photos/28238704/pexels-photo-28238704.jpeg?auto=compress&cs=tinysrgb&w=1920';
 
-const whatsappNumber = '919353743588';
+const whatsappNumber = '919036017587';
 const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hi, I'm interested in SilentMiles journeys. Could you share more details?")}`;
 const whatsappCommunityLink = 'https://chat.whatsapp.com/B9AGI21HmIyAftjaNxrmSf';
+const contactPhone = '+91 90360 17587';
 
 function useCountdown(target: Date) {
   const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -103,22 +104,37 @@ export default function App() {
           ))}
         </div>
 
-        {/* CTAs */}
-        <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row">
+        {/* Contact info */}
+        <div className="mt-10 flex flex-col items-center gap-2 animate-fade-in-delay-4">
+          <p className="text-xs uppercase tracking-ultra text-ivory-200/40">
+            Get in touch
+          </p>
           <a
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 rounded-full bg-[#25D366] px-7 py-3.5 text-xs font-bold uppercase tracking-mega text-[#0c0a09] transition-all duration-300 hover:bg-[#1ebe5d] hover:shadow-lg hover:shadow-[#25D366]/30"
+            className="font-serif text-lg text-ivory-100 transition-colors hover:text-champagne-300"
           >
-            <MessageCircle size={16} />
-            WhatsApp Us
+            {contactPhone}
+          </a>
+        </div>
+
+        {/* CTAs */}
+        <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row">
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 rounded-full bg-[#25D366] px-8 py-4 text-xs font-bold uppercase tracking-mega text-[#0c0a09] transition-all duration-300 hover:bg-[#1ebe5d] hover:shadow-lg hover:shadow-[#25D366]/30"
+          >
+            <MessageCircle size={18} />
+            Chat on WhatsApp
           </a>
           <a
             href={whatsappCommunityLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 rounded-full border border-champagne-400/50 px-7 py-3.5 text-xs font-bold uppercase tracking-mega text-champagne-300 transition-all duration-300 hover:bg-champagne-400 hover:text-[#0c0a09]"
+            className="inline-flex items-center gap-3 rounded-full border border-champagne-400/50 px-8 py-4 text-xs font-bold uppercase tracking-mega text-champagne-300 transition-all duration-300 hover:bg-champagne-400 hover:text-[#0c0a09]"
           >
             Join Community
             <ArrowRight size={14} />
@@ -126,7 +142,7 @@ export default function App() {
         </div>
 
         {/* Footer line */}
-        <p className="absolute bottom-6 left-0 right-0 text-center text-xs text-ivory-200/30">
+        <p className="mt-10 text-center text-xs text-ivory-200/30">
           You bring the dream. We enhance the journey.
         </p>
       </div>
