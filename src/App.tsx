@@ -4,10 +4,10 @@ import { MessageCircle, ArrowRight } from 'lucide-react';
 const bgImage =
   'https://images.pexels.com/photos/28238704/pexels-photo-28238704.jpeg?auto=compress&cs=tinysrgb&w=1920';
 
-const whatsappNumber = '919036017587';
+const whatsappNumber = '919353743588';
 const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hi, I'm interested in SilentMiles journeys. Could you share more details?")}`;
 const whatsappCommunityLink = 'https://chat.whatsapp.com/B9AGI21HmIyAftjaNxrmSf';
-const contactPhone = '+91 90360 17587';
+const contactPhone = '+91 93537 43588';
 
 function useCountdown(target: Date) {
   const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
